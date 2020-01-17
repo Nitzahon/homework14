@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
+// import { BrowserRouter as Link, Router } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
+
+export default class App extends Component {
+  state={
+    rooms:[]
+  };
+  render() {
+    return (
+      <div>
+            <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       {/* <Router> */}
+       <div className="shTitle">
+          Smart house
+       </div>
+       {/* </Router> */}
+       <div>
+
+<div className="btncontainer">
+  <button className="btn circbtn">+</button>
+</div>
+       </div>
       </header>
     </div>
-  );
+      </div>
+    )
+  }
 }
 
-export default App;
