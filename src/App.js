@@ -13,7 +13,6 @@ export default class App extends Component {
     devices:[{
       flag:"#ff0000",
       type:"Lamp"
-
     }]
     }]
   };

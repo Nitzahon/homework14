@@ -9,33 +9,37 @@ export default class Home extends Component {
       rooms: props.rooms
     };
   }
-//   AddRoom = (room)=>{
-//     this.props.addR(room);
-//   }
+  //   AddRoom = (room)=>{
+  //     this.props.addR(room);
+  //   }
   render() {
     return (
       <div>
         <div className="roomList">
           {this.state.rooms.map((elm, i) => {
             return (
-              <Link to={{
-                pathname: "/Room",
-                state: { room: elm, index:i }
-              }}>
+              <Link
+                to={{
+                  pathname: "/Room",
+                  state: { room: elm, index: i }
+                }}
+              >
                 <RoomLink
                   name={elm.name}
                   type={elm.type}
                   index={i}
                   color={elm.color}
                 />
-        </Link>
+              </Link>
             );
           })}
         </div>
         <div>
           <div className="btncontainer">
-          <Link to="/AddRoom">
-            <button className="btn btn-primary circbtn rounded-circle">+</button>
+            <Link to="/AddRoom">
+              <button className="btn btn-primary circbtn rounded-circle">
+                +
+              </button>
             </Link>
           </div>
         </div>

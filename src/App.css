@@ -123,3 +123,9 @@ color: black;
 -webkit-user-select: none; /* Chrome, Safari, and Opera */
 -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
+/* .roomDeets{
+  height:20rem;
+} */
+.addDevComp{
+  height:20rem;
+}
