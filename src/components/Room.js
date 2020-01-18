@@ -4,14 +4,12 @@ export default class Room extends Component {
     constructor(props) {
         super(props)
 
-        this.state={
-                index=props.i
-        }
+
     }
     render() {
         return (
             <div>
-
+                {this.state.i}
             </div>
         )
     }

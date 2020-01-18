@@ -14,7 +14,7 @@ export default class RoomLink extends Component {
   render() {
     return (
       <div>
-        <div onClick={void(0)} className="roomSq" style={{ backgroundColor: this.state.bgc}}>
+        <div className="roomSq" style={{ backgroundColor: this.state.bgc}}>
             <div className="roomName">{this.state.name}</div>
         </div>
       </div>

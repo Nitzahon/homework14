@@ -9,21 +9,26 @@ export default class Home extends Component {
       rooms: props.rooms
     };
   }
-
+//   AddRoom = (room)=>{
+//     this.props.addR(room);
+//   }
   render() {
     return (
       <div>
         <div className="roomList">
           {this.state.rooms.map((elm, i) => {
             return (
-              <td>
+              <Link to={{
+                pathname: "/Room",
+                state: { room: elm, index:i }
+              }}>
                 <RoomLink
                   name={elm.name}
                   type={elm.type}
                   index={i}
                   color={elm.color}
                 />
-              </td>
+        </Link>
             );
           })}
         </div>
