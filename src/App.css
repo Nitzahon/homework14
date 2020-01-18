@@ -126,6 +126,11 @@ color: black;
 /* .roomDeets{
   height:20rem;
 } */
+/*borders are to help with testing*/
+.roomDeets{
+  border: 1px black solid;
+}
 .addDevComp{
+  border: 1px black solid;
   height:20rem;
 }

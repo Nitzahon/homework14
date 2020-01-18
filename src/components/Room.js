@@ -34,22 +34,10 @@ export default class Room extends Component {
           );
         } else {
           return (
-            <div className="row homeRow">
-              <div className="col-10 shoppingList">
-                <div className="row">
-                  <div className="col-1"></div>
-                  <div className="col-6  products">List of products</div>
-                  <div className="col-5"></div>
-                </div>
-    
-                products
-              </div>
-              <div className="col-2">
-                <div className="spListDesc spListDescAdd">Add</div>
-              </div>
+            <div>False
             </div>
           );
-      };
+  };
     //   console.log("show rendered");
     // return (<div>Tester</div>);
     // if (this.state.flag === true) {
@@ -96,7 +84,8 @@ export default class Room extends Component {
           </div>
           <div className="col-2"></div>
         </div>
-        <div className="addDevComp">Test{this.show}</div>
+        
+        <div className="addDevComp">{this.show}</div>
         <div className="btnContainer row">
           <div className="col-1"></div>
           <div className="col-4">
@@ -108,7 +97,7 @@ export default class Room extends Component {
             <button
               className="btn btn-primary"
               onClick={() => {
-                this.setState({ flag: true });
+                this.setState({ flag: !this.state.flag });
               }}
             >
               Add Device
