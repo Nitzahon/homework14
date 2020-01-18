@@ -5,18 +5,21 @@ export default class RoomLink extends Component {
     super(props);
 
     this.state = {
-      index:props.index,
-      bgc:props.color,
-      type:props.type,
-      name:props.name
+      index: props.index,
+      bgc: props.color,
+      type: props.type,
+      name: props.name
     };
   }
   render() {
     return (
       <div>
-        <div className="roomSq" style={{ backgroundColor: this.state.bgc}}>
-            <div className="roomName">{this.state.name}</div>
-        </div>
+        <button
+          className="btn roomSq roomName"
+          style={{ backgroundColor: this.state.bgc }}
+        >
+          {this.state.name}
+        </button>
       </div>
     );
   }
