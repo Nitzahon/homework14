@@ -25,19 +25,16 @@ export default class Room extends Component {
     this.props.upR(this.state.room, this.state.index);
   };
   show = () => {
-        console.log("show");
-        if (this.state.flag === true) {
-          return (
-            <div>
-                <AddDevice/>>
-            </div>
-          );
-        } else {
-          return (
-            <div>False
-            </div>
-          );
-  };
+    console.log("show");
+    if (this.state.flag === true) {
+      return (
+        <div>
+          <AddDevice />>
+        </div>
+      );
+    } else {
+      return <div>False</div>;
+    }
     //   console.log("show rendered");
     // return (<div>Tester</div>);
     // if (this.state.flag === true) {
@@ -68,7 +65,7 @@ export default class Room extends Component {
     // }
   };
   render() {
-      console.log("rendered");
+    console.log("rendered");
     return (
       <div>
         <div className="row roomDeets">
@@ -78,13 +75,15 @@ export default class Room extends Component {
             <div className="row">Room Type: {this.state.room.type}</div>
           </div>
           <div className="col-4">
-            {this.state.room.devices.map((elm, i) => {
-              return <DeviceComp device={elm} index={i} upR={this.upR} />;
-            })}
+            <div className="deviceBar">
+              {this.state.room.devices.map((elm, i) => {
+                return <DeviceComp device={elm} index={i} upR={this.upR} />;
+              })}
+            </div>
           </div>
           <div className="col-2"></div>
         </div>
-        
+
         <div className="addDevComp">{this.show}</div>
         <div className="btnContainer row">
           <div className="col-1"></div>

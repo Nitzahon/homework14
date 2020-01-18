@@ -36,8 +36,8 @@
     transform: rotate(360deg);
   }
 } */
-.circbtn{
-color: black;
+.circbtn {
+  color: black;
   min-width: 15rem;
   min-height: 10rem;
   font-size: 5rem;
@@ -45,92 +45,95 @@ color: black;
   padding: 0;
   margin-top: 3rem;
 }
-.circbtn:hover{
-  color:black;
+.circbtn:hover {
+  color: black;
 }
-.shTitle{
+.shTitle {
   all: initial;
-  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   font-size: 10rem;
   margin-top: 1rem;
-  
 }
-.shTitle:hover{
+.shTitle:hover {
   text-decoration: none;
-  color:initial;
+  color: initial;
 }
-.roomSq{
+.roomSq {
   width: 15rem;
   height: 15rem;
-  margin: .5rem;
+  margin: 0.5rem;
   border: 1px black;
   border-style: solid;
-  border-radius: .5rem;
-  color:black;
+  border-radius: 0.5rem;
+  color: black;
 }
-.roomSq:hover{
-  opacity:0.7;
+.roomSq:hover {
+  opacity: 0.7;
 }
-.roomList{
-  margin-top: .5rem;
+.roomList {
+  margin-top: 0.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
   display: inline-flex;
   overflow: auto;
   white-space: nowrap;
 }
-.roomName{
+.roomName {
   font-size: 3rem;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  
 }
-.roomInp{
-  width:60rem;
-  height:5rem;
+.roomInp {
+  width: 60rem;
+  height: 5rem;
   font-size: 3rem;
   text-align: center;
 }
-.roomSel{
-  text-align-last:center;
+.roomSel {
+  text-align-last: center;
 }
-.crtRm{
-  height:7rem;
-  width:12rem;
+.crtRm {
+  height: 7rem;
+  width: 12rem;
   margin-top: 4rem;
   font-size: 3rem;
   text-align: center;
   border: 1px black solid;
-
 }
-.colorTitle{
+.colorTitle {
   text-align: center;
 }
-.roomdetails{
+.roomdetails {
   text-align: left;
   font-size: 2rem;
   font-weight: 800;
 }
-.devices{
-  height:5rem;
+.devices {
+  height: 5rem;
   font-size: 3rem;
   border: 1px black solid;
-
+  margin: 0.5rem;
+  border-radius: .5rem;
 }
 .disable-selection {
   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer */
--khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
--webkit-user-select: none; /* Chrome, Safari, and Opera */
--webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
-/* .roomDeets{
-  height:20rem;
-} */
+
 /*borders are to help with testing*/
-.roomDeets{
+.roomDeets {
   border: 1px black solid;
+  height: 15rem;
 }
-.addDevComp{
+.addDevComp {
   border: 1px black solid;
-  height:20rem;
+  height: 20rem;
+}
+.deviceBar {
+  overflow-y: auto;
+  white-space: nowrap;
+  border: 1px black solid;
+  height: 15rem;
 }
