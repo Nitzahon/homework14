@@ -74,7 +74,7 @@
   margin-top: 0.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  display: inline-flex;
+  display: flex;
   overflow: auto;
   white-space: nowrap;
 }

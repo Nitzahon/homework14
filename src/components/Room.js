@@ -27,12 +27,14 @@ export default class Room extends Component {
   show = () => {
     console.log("show");
     if (this.state.flag === true) {
+      console.log("true");
       return (
         <div>
-          <AddDevice />>
+          <AddDevice />
         </div>
       );
     } else {
+      console.log("false");
       return <div>False</div>;
     }
     //   console.log("show rendered");
