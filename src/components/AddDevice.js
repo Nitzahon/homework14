@@ -38,6 +38,7 @@ export default class AddDevice extends Component {
           <option value="Kettle">Kettle</option>
           <option value="Air Conditioner">Air Conditioner</option>
           <option value="Fan">Fan</option>
+          <option value="Boiler">Boiler</option>
           <option value="Television">Television</option>
         </select>
         <div className="AddBtnCtnr row">
