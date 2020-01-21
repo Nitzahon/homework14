@@ -12,7 +12,7 @@ export default class Room extends Component {
       index: props.room.location.state.index
     };
   }
-  addDev = (device) => {
+  addDev = device => {
     var tempRoom = this.state.room;
     tempRoom.devices = [...tempRoom.devices, device];
     this.setState({ room: tempRoom });
@@ -25,11 +25,10 @@ export default class Room extends Component {
     this.props.upR(this.state.room, this.state.index);
   };
   show = () => {
-
     if (this.state.flag === true) {
       return (
         <div>
-          <AddDevice addDev={this.addDev}/>
+          <AddDevice addDev={this.addDev} />
         </div>
       );
     } else {
@@ -59,12 +58,7 @@ export default class Room extends Component {
         {this.show()}
         <div className="btnContainer row">
           <div className="col-1"></div>
-          <div className="col-4">
-            <Link to="/">
-              <button className="btn btn-primary">Home</button>
-            </Link>
-          </div>
-          <div className="col-2">
+          <div className="col-1">
             <button
               className="btn btn-primary"
               onClick={() => {
@@ -74,7 +68,13 @@ export default class Room extends Component {
               Add Device
             </button>
           </div>
-          <div className="col-7"></div>
+          <div className="col-8"></div>
+          <div className="col-1">
+            <Link to="/">
+              <button className="btn btn-primary">Home</button>
+            </Link>
+          </div>
+          <div className="col-1"></div>
         </div>
       </div>
     );

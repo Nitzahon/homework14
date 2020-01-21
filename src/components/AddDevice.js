@@ -42,9 +42,9 @@ export default class AddDevice extends Component {
           <option value="Television">Television</option>
         </select>
         <div className="AddBtnCtnr row">
-          <div className="col-1"></div>
+          <div className="col-7"></div>
           <button onClick={this.addDev} className="btn btn-primary col-2 addBtnDev">Add</button>
-          <div className="col-9"></div>
+          <div className="col-3"></div>
         </div>
       </div>
     );

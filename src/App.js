@@ -7,8 +7,7 @@ import AddRoom from "./components/AddRoom";
 import Room from "./components/Room";
 export default class App extends Component {
   state = {
-    rooms: [    
-    ]
+    rooms: []
   };
   AddRoom = room => {
     this.setState({ rooms: [...this.state.rooms, room] });
@@ -18,7 +17,7 @@ export default class App extends Component {
     tempRooms[index] = room;
     this.setState({ rooms: [...tempRooms] });
   };
-
+  
   render() {
     return (
       <div>
