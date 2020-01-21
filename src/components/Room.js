@@ -12,7 +12,7 @@ export default class Room extends Component {
       index: props.room.location.state.index
     };
   }
-  addDev = device => {
+  addDev = (device) => {
     var tempRoom = this.state.room;
     tempRoom.devices = [...tempRoom.devices, device];
     this.setState({ room: tempRoom });
@@ -25,46 +25,16 @@ export default class Room extends Component {
     this.props.upR(this.state.room, this.state.index);
   };
   show = () => {
-    console.log("show");
+
     if (this.state.flag === true) {
-      console.log("true");
       return (
         <div>
-          <AddDevice />
+          <AddDevice addDev={this.addDev}/>
         </div>
       );
     } else {
-      console.log("false");
-      return <div>False</div>;
+      return <div></div>;
     }
-    //   console.log("show rendered");
-    // return (<div>Tester</div>);
-    // if (this.state.flag === true) {
-    //   return (
-    //     <div className="row addDevice">
-    //       TRUE
-    //       <div className="col-12 addDevComp">
-    //         <select
-    //           name="deviceType"
-    //           onChange={this.addType}
-    //           className="roomInp roomSel"
-    //         >
-    //           <option selected disabled>
-    //             Choose Device
-    //           </option>
-    //           <option value="Stereo">Stereo</option>
-    //           <option value="Lamp">Lamp</option>
-    //           <option value="Kettle">Kettle</option>
-    //           <option value="Air Conditioner">Air Conditioner</option>
-    //           <option value="Fan">Fan</option>
-    //           <option value="Television">Television</option>
-    //         </select>
-    //       </div>
-    //     </div>
-    //   );
-    // } else {
-    //   return <div>FLASE</div>;
-    // }
   };
   render() {
     console.log("rendered");
@@ -86,7 +56,7 @@ export default class Room extends Component {
           <div className="col-2"></div>
         </div>
 
-        <div className="addDevComp">{this.show}</div>
+        {this.show()}
         <div className="btnContainer row">
           <div className="col-1"></div>
           <div className="col-4">

@@ -11,6 +11,18 @@ export default class AddDevice extends Component {
   addType = (e) =>{
     this.setState({type: e.target.value});
   };
+  addDev = () =>{
+    if(this.state.type===""){
+      alert("You must choose a device");
+      return;
+    }
+    else{
+      this.props.addDev(
+        {type:this.state.type,
+        flag:"#ff0000"}
+      );
+    }
+  };
   render() {
     return (
       <div className="addDevComp">
@@ -28,6 +40,11 @@ export default class AddDevice extends Component {
           <option value="Fan">Fan</option>
           <option value="Television">Television</option>
         </select>
+        <div className="AddBtnCtnr row">
+          <div className="col-1"></div>
+          <button onClick={this.addDev} className="btn btn-primary col-2 addBtnDev">Add</button>
+          <div className="col-9"></div>
+        </div>
       </div>
     );
   }

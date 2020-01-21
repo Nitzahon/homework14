@@ -7,75 +7,7 @@ import AddRoom from "./components/AddRoom";
 import Room from "./components/Room";
 export default class App extends Component {
   state = {
-    rooms: [
-      {
-        type: "Kitchen",
-        name: "A",
-        color: "#00FF00",
-        devices: [
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          },
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          },
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          },
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          },
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          },
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          },
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          }
-        ]
-      },
-      {
-        type: "Kitchen",
-        name: "A",
-        color: "#00FF00",
-        devices: [
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          }
-        ]
-      },
-      {
-        type: "Kitchen",
-        name: "A",
-        color: "#00FF00",
-        devices: [
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          }
-        ]
-      },
-      {
-        type: "Kitchen",
-        name: "A",
-        color: "#00FF00",
-        devices: [
-          {
-            flag: "#ff0000",
-            type: "Lamp"
-          }
-        ]
-      }
+    rooms: [    
     ]
   };
   AddRoom = room => {

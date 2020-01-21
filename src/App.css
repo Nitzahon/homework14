@@ -124,16 +124,26 @@
 
 /*borders are to help with testing*/
 .roomDeets {
-  border: 1px black solid;
-  height: 15rem;
+  /* border: 1px black solid;
+  height: 15rem; */
+  margin: 1rem;
 }
 .addDevComp {
-  border: 1px black solid;
-  height: 20rem;
-}
+  /* border: 1px black solid;*/
+  height: 15rem;
+  margin: 1rem;
+
+} 
 .deviceBar {
   overflow-y: auto;
   white-space: nowrap;
   border: 1px black solid;
   height: 15rem;
+  border-radius: .5rem;
+}
+.AddBtnCtnr{
+  margin-top: 5rem;
+}
+.addBtnDev{
+  margin-left: 2rem;
 }
