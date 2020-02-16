@@ -23,7 +23,7 @@ export default class App extends Component {
       <div>
         <div className="App">
           <header className="App-header">
-          <Router basename="homeowrk14">
+          <Router basename="homework14">
               <Link className="shTitle" to="/">
                 Smart house
               </Link>
