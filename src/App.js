@@ -26,27 +26,27 @@ export default class App extends Component {
           {/* <BrowserRouter basename="/homework14" /> */}
           
           <Router basename="/homework14">
-              <Link className="shTitle" to="/">
+              <Link className="shTitle" to={process.env.PUBLIC_URL + '/'}>
                 Smart house
               </Link>
               <Switch>
                 <Route
                   exact
-                  path="/"
+                  path={process.env.PUBLIC_URL + '/'}
                   component={() => {
                     return <Home rooms={this.state.rooms} />;
                   }}
                 />
                 <Route
                   exact
-                  path="/AddRoom"
+                  path={process.env.PUBLIC_URL + '/AddRoom'}
                   component={() => {
                     return <AddRoom addR={this.AddRoom} />;
                   }}
                 />
                 <Route
                   exact
-                  path="/Room"
+                  path={process.env.PUBLIC_URL + '/Room'}
                   component={(room, ind) => {
                     return <Room room={room} i={ind} upR={this.UpdateRoom} />;
                   }}

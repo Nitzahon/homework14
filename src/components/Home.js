@@ -36,7 +36,7 @@ export default class Home extends Component {
         </div>
         <div>
           <div className="btncontainer">
-            <Link to="/AddRoom">
+            <Link to={process.env.PUBLIC_URL + '/AddRoom'}>
               <button className="btn btn-primary circbtn rounded-circle">
                 +
               </button>
