@@ -26,7 +26,7 @@ export default class App extends Component {
           {/* <BrowserRouter basename="/homework14" /> */}
           
           <Router basename="/homework14">
-              <Link className="shTitle" to={process.env.PUBLIC_URL + basename + '/'}>
+              <Link className="shTitle" to={process.env.PUBLIC_URL + '/homework14' + '/'}>
                 Smart house
               </Link>
               <Switch>
