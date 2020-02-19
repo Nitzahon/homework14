@@ -70,7 +70,7 @@ export default class Room extends Component {
           </div>
           <div className="col-8"></div>
           <div className="col-1">
-            <Link to={process.env.PUBLIC_URL + '/'}>
+            <Link to="/">
               <button className="btn btn-primary">Home</button>
             </Link>
           </div>

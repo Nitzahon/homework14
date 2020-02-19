@@ -85,7 +85,7 @@ export default class AddRoom extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-3">
-          <Link style={{ textDecoration: 'none' }} to={process.env.PUBLIC_URL + '/'}>
+          <Link style={{ textDecoration: 'none' }} to="/">
             <button onClick={this.createRoom} className="btn btn-primary crtRm">Create</button>
             </Link>
           </div>

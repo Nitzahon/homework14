@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./components/Home.js";
 import AddRoom from "./components/AddRoom";
 import Room from "./components/Room";
@@ -23,30 +23,28 @@ export default class App extends Component {
       <div>
         <div className="App">
           <header className="App-header">
-          {/* <BrowserRouter basename="/homework14" /> */}
-          
-          <Router basename="/homework14">
-              <Link className="shTitle" to={process.env.PUBLIC_URL + '/homework14' + '/'}>
+            <Router>
+              <Link className="shTitle" to="/">
                 Smart house
               </Link>
               <Switch>
                 <Route
                   exact
-                  path={process.env.PUBLIC_URL + '/'}
+                  path="/"
                   component={() => {
                     return <Home rooms={this.state.rooms} />;
                   }}
                 />
                 <Route
                   exact
-                  path={process.env.PUBLIC_URL + '/AddRoom'}
+                  path="/AddRoom"
                   component={() => {
                     return <AddRoom addR={this.AddRoom} />;
                   }}
                 />
                 <Route
                   exact
-                  path={process.env.PUBLIC_URL + '/Room'}
+                  path="/Room"
                   component={(room, ind) => {
                     return <Room room={room} i={ind} upR={this.UpdateRoom} />;
                   }}
